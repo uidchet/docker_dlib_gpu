@@ -1,8 +1,8 @@
 FROM nvidia/cuda:10.0-cudnn7-devel-ubuntu18.04
 RUN apt-get update
 RUN apt-get install cmake -y
-RUN apt-get install python3
-RUN apt-get install python3-dev
+RUN apt-get install -y python3
+RUN apt-get install -y python3-dev
 RUN apt-get update
 RUN apt-get install -y libblas-dev liblapack-dev libatlas-base-dev
 RUN apt-get install -y git
